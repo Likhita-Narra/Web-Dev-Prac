@@ -1,0 +1,1 @@
+document.getElementById("sample").style.fontSize = "50px";

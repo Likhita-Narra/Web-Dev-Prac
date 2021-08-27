@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Headings
@@ -64,5 +68,28 @@
     <p>Javascript can reveal elements</p>
     <p id="reveal" style="display:none">Can JavaScript Reveal this text?</p>
     <button onclick="revealText()">Reveal</button>
+
+    <h1>Difference between Anchor tag and Link tag</h1>
+    <a href="https://www.shutterstock.com/file-converter">Link: Shutterstock</a>
+    <br>
+    <a name="Shutterstock">Anchor: Shutterstock</a>
+    <br><br><br>
+    <h1>Adding google maps to a web page</h1>
+    <h4>This is a google map</h4>
+    <div style="width:100%; height:100px;" id="map">
+        <script>
+            function createMap() {
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+                        centre = new google.maps.LatLng(51.5, -0.2),
+                        zoom = 10
+                    }
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+        </script>
+        <p style="color: gray;"><i>This division has been temporarily put to hold due to GOOGLE API account creation issues</i></p>
+    </div>
+    <h1>Google Fonts</h1>
+    <h1 style="font-family:'Sofia', cursive;">This paragraph tests the Google Fonts</h1>
 </body>
 </html>
